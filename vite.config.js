@@ -13,7 +13,7 @@ export default defineConfig({
     port: 3001,
     proxy: {
       '/api': {
-        target: 'http://localhost:10010/wsq_zcgl',
+        target: 'http://localhost:8080/wsq_zcgl',
         changeOrigin: true
       }
     }

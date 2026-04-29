@@ -3,7 +3,7 @@ import { showToast } from 'vant'
 import router from '@/router/index.js'
 
 const service = axios.create({
-    baseURL: import.meta.env.DEV ? '/api' : 'http://localhost:10010/wsq_zcgl/api',
+    baseURL: import.meta.env.DEV ? '/api' : 'http://localhost:8080/wsq_zcgl/api',
     timeout: 10000
 })
 
