@@ -12,3 +12,7 @@ export function getStockPool(assetType) {
     const params = assetType ? { assetType } : {}
     return service.get('/assets/stock-pool', { params })
 }
+
+export function getAssetTypes() {
+    return service.get('/asset-types', { params: { mode: 'active' } })
+}
